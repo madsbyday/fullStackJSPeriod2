@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    h1 add User
+
+    form(action='/add_user', method='POST')
+            label(for='firstname') Firstname
+            input.form-control(type='text' id='firstname' placeholder='firstname' name='firstname')
+
+            label(for='email') Lastname
+            input.form-control(type='text' id='lastname' placeholder='lastname' name='lastname')
+
+            label(for='email') Username
+            input.form-control(type='text' id='username' placeholder='username' name='username')
+
+            label(for='email') Password
+            input.form-control(type='password' id='password' placeholder='password' name='password')
+
+            button.btn.btn-primary(type='submit') Add 
+
+
